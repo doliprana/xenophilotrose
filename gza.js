@@ -76,7 +76,7 @@ document.addEventListener("keydown", (event) => {
             terminal.innerHTML += `<div>Ever heard of konami code ;3</div>`;
         }
 
-        else if (command === "cd documents") {
+        else if (command === "ls documents") {
             terminal.innerHTML += `<p>cat1 cat2 cat3 cat67 cat99</p>`;
         }
         
@@ -85,11 +85,9 @@ document.addEventListener("keydown", (event) => {
             terminal.innerHTML += `
                 <div>Available commands:</div>
                 <div>neofetch</div>
-                <div></div>
                 <div>help</div>
                 <div>clear</div>
                 <div>ls</div>
-                <div>cd</div>
                 <div>cat</div>
             `;
         }

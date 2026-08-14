@@ -1,0 +1,69 @@
+body{
+  background-color: black;
+   display: flex;
+   flex-direction: column;
+}
+
+h4{
+  color: palevioletred;
+  font-family: monospace;
+}
+.cursor{
+    display:inline-block;
+    width:8px;
+    height:1em;
+    background:#c0c0c0;
+    animation:blink 1s steps(1) infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+#typed{
+  color: palevioletred;
+  font-family: monospace;
+}
+
+.prompt{
+  color: palevioletred;
+  font-family: monospace;
+}
+div{
+  margin: 0;
+  padding: 0;
+  color: palevioletred;
+  font-family: monospace;
+  
+}
+
+#terminal {
+    color: aquamarine;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.terminal-img{
+  width: 6cm;
+  border-radius: 2cm;
+  padding: 5mm;
+  
+}
+
+#boot-screen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+#boot-screen img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* fills the screen */
+}
